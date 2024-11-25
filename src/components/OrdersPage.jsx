@@ -57,7 +57,7 @@ const OrdersPage = () => {
               <tr>
                 <th className="border border-gray-300 p-2">الاسم</th>
                 <th className="border border-gray-300 p-2">رقم الهاتف</th>
-                <th className="border border-gray-300 p-2">عدد العبوات</th>
+
                 <th className="border border-gray-300 p-2">الإجراءات</th>
               </tr>
             </thead>
@@ -70,9 +70,7 @@ const OrdersPage = () => {
                     <td className="border border-gray-300 p-2">
                       {order.phone}
                     </td>
-                    <td className="border border-gray-300 p-2">
-                      {order.quantity}
-                    </td>
+
                     <td className="border border-gray-300 p-2">
                       <button
                         onClick={() => handleProcessOrder(order.id)}
@@ -93,7 +91,6 @@ const OrdersPage = () => {
               <tr>
                 <th className="border border-gray-300 p-2">الاسم</th>
                 <th className="border border-gray-300 p-2">رقم الهاتف</th>
-                <th className="border border-gray-300 p-2">عدد العبوات</th>
               </tr>
             </thead>
             <tbody>
@@ -104,9 +101,6 @@ const OrdersPage = () => {
                     <td className="border border-gray-300 p-2">{order.name}</td>
                     <td className="border border-gray-300 p-2">
                       {order.phone}
-                    </td>
-                    <td className="border border-gray-300 p-2">
-                      {order.quantity}
                     </td>
                   </tr>
                 ))}
